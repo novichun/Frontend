@@ -10,7 +10,7 @@ Users should be able to:
 
 ### Screenshot
 Desktop:
-![./print-screen/1440.png]
+![](./print-screen/1440.png)
 Mobile:
 ![./print-screen/375.png]
 
