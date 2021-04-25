@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+.grid-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 65%;
+    height: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    gap: 0px 0px;
+    grid-template-areas:
+      "first second third";
+  }
+  .first { 
+    grid-area: first; 
+    background-color: hsl(31, 77%, 52%);
+}
+  .second { 
+    grid-area: second;
+    background-color: hsl(184, 100%, 22%);
+}
+  .third { 
+    grid-area: third; 
+    background-color: hsl(179, 100%, 13%);
+}
+
+  .tartalom {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    gap: 0px 0px;
+    grid-template-areas:
+      "pic"
+      "title"
+      "text"
+      "button";
+  }
+  .pic { grid-area: pic; padding-top: 30px; padding-bottom: 30px;  margin-left: 50px; }
+  .title { 
+    grid-area: title;
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 30px;
+    padding-bottom: 30px;
+    margin-left: 50px;
+    }
+  .text {   
+    grid-area: text;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    padding-bottom: 60px;
+    margin-left: 50px;
+    
+ }
+  .button { grid-area: button;  margin-left: 50px; padding-bottom: 50px; }
+  button {
+      background-color: hsl(0, 0%, 95%);
+      
+      font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+      border: none;
+      padding: 12px 20px 12px 20px;
+      border-radius: 30px;
+  }
