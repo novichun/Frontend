@@ -14,7 +14,7 @@ Users should be able to:
 ![](./print-screen/1.png)
 
 
-- Solution URL: [Add solution URL here](https://github.com/novichun/Frontend/tree/main/2-Column_Preview_Card)
+- Solution URL: (https://github.com/novichun/Frontend/tree/main/2-Column_Preview_Card)
 
 
 ## My process
