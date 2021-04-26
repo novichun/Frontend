@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+      
+        <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+        <link rel="icon" href="./img/favicon.png" type="image/x-icon">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>PW Studio - Novák Dániel</title>
+        <link rel="stylesheet" href="./style/main.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@600;800&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      </head>
+<body>
+
+<button class="gomb" id="popup">Pop Up</button>
+
+
+
+
+
+
+
+<div id="popmodal" class="modal">
+  <div class="modal-content">
+    
+ 
+    <div class="grid-container">
+      <div class="title" id="title">Válaszd különleges ajánlatunkat</div>
+
+      <div class="pic">
+
+        <div class="grid-container2">
+          <div class="big"><img id="big-img" src="./img/1.jpg" height="310px" width="auto"></div>
+          <div id="bit1" class="bit1"><a onclick="change1();"><img id="keret" src="./img/1.jpg" height="70px" width="auto"></a></div>
+          <div class="bit2"><img id="keret" onclick="change2();" src="./img/2.jpg" height="70px" width="auto"></div>
+          <div class="bit3"><img id="keret" onclick="change3();" src="./img/3.jpg" height="70px" width="auto"></div>
+        </div>
+
+      </div>
+
+      <div class="ures"><span class="close">&times;</span></div>
+      <div class="termek" id="termek"><b>Miana</b> női szandál Arabella</div>
+      <div class="ar" id="ar">8.393 Ft <a>11.990 Ft</a> <r>30%</r></div>
+      <div class="meret">
+        <table id="asd" style="width: 100%;" >
+          <tbody>
+          <tr>
+          <td> <b>Méret</b></td>
+          <td>
+            <table class="meret">
+              <tbody>
+              <tr >
+              <td id="elso" onclick="meret1();">37</td>
+              <td id="masodik" onclick="meret2();">39</td>
+              <td id="harmadik" onclick="meret3();">40</td>
+              <td id="negy" onclick="meret4();">41</td>
+              <td id="ot" onclick="meret5();">42</td></tr>
+              </tbody>
+              </tr>
+              </table>
+          </td>
+          </tr>
+          </tbody>
+          </table>
+     </div>
+
+      <div class="shop">
+        <table>
+          <tbody>
+          <tr>
+          <td><div class="counter">
+            <span id="valt" class="down" onClick='decreaseCount(event, this)'>-</span>
+            <input class="input" type="text" value="1">
+            <span class="up" onClick='increaseCount(event, this)'>+</span>
+          </div>
+        </td>
+          <td> <g href="#" class="kosar"><img src="./img/kosáricon.svg" id="kosaricon">KOSÁRBA <span id="noshow">TESZEM</span></g></td>
+          </tr>
+          </tbody>
+          </table>
+      </div>
+
+
+      <div id="more"  class="more" onclick="showhide()">Termék információ<img  id="lenyilo" src="./img/lenyilo.png">
+        <br>
+        <div id="kinyilo">  
+          <p> <br><br><t>Miana női szandál ARABELLA M-20-1-SBX23-017B/sarga</t><br><br>
+          
+            <v>Miana Női Cipő a cég 2020 tavaszi/nyári választékából. Magyarországi vezető divat,<br>
+             üzletünkből! Miana márka hivatalos forgalmazó divat shop! |markasbolt.hu a<br>
+              márkásbolt.hu legsikeresebb kollekciójából.<br>
+              <br>
+              Ez a Miana Női Cipő sárga színben. Gardróbodból nem hiányozhat a fiatalos hétköznapokra minden trendi nő számára ajánlatos. <br><br>
+              Miana női szandál ARABELLA rendkívül jó tulajdonságokkal rendelkezik, anyaga<br>
+               Felsőrész: 50% Szintetikus, 50% Textil, Bélés: 100% Textil, Talp: 100% Szintetikus,<br>
+                melynek köszönhető, hogy magas minőséget biztosít, felejthetetlen életérzést ad és
+                remek kinézetet áraszt viselőjének. Mindenkinek ajánljuk divatos,utcai,hétköznapi viseletre.<br></v>
+                <br>
+               <v> Anyag</v><br>
+               <c>
+                felsőrész: 50% Szintetikus, 50% Textil<br>
+                bélés: 100% Textil<br>
+                talp: 100% Szintetikus<br>
+              </c><br>
+              <v> Kategória</v><br>
+              <c> Női Ruházat Kabát</c><br><br>
+              <v>Szín</v><br>
+              <c>yellow</c><br><br>
+              <l>Termék adatok frissítve: 2020-02-21.</l>
+
+          </p>  
+      </div>  
+    </div>
+      
+      
+
+
+      <div id="size" class="size" onclick="showhide2()">Mérettáblázat<img  id="lenyilo2" src="./img/lenyilo.png">
+        <br>
+        <div id="kinyilo2">  
+          <p> <br><br>What is Lorem Ipsum?<br><br>
+            Lorem Ipsum is simply dummy text of the printing and typesetting<br>
+             industry. Lorem Ipsum has been the industry's standard dummy tex<br>
+             t ever since the 1500s, when an unknown printer took a galley of t<br>
+             ype and scrambled it to make a type specimen book. It has survived not<br><br><br>
+              only five centuries, but also the leap into electronic typesetting, remai<br>
+              ning essentially unchanged. It was popularised in the 1960s wi<br>
+              th the release of Letraset sheets containing Lorem Ipsum passages, and<br> 
+              more recently with desktop publishing software like Aldus PageMaker<br>
+               including versions of Lorem Ipsum. 
+               <br><br>What is Lorem Ipsum?<br><br>
+            Lorem Ipsum is simply dummy text of the printing and typesetting<br>
+             industry. Lorem Ipsum has been the industry's standard dummy tex<br>
+             t ever since the 1500s, when an unknown printer took a galley of t<br>
+             ype and scrambled it to make a type specimen book. It has survived not<br><br><br>
+              only five centuries, but also the leap into electronic typesetting, remai<br>
+              ning essentially unchanged. It was popularised in the 1960s wi<br>
+              th the release of Letraset sheets containing Lorem Ipsum passages, and<br> 
+              more recently with desktop publishing software like Aldus PageMaker<br>
+               including versions of Lorem Ipsum.</p>  
+
+      </div>  
+    </div>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+<script type="text/javascript" src="./script/popup.js"></script>
+</body>
+</html>
