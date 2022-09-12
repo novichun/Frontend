@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Gombos Pálma</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+</style>
+	</head>
+	<body>
+
+		
+			<header id="header">
+				<div class="logo"><a href="#">Gombos Pálma <span>Portfolio</span></a></div>
+			</header>
+
+	
+			<section id="main">
+				<div class="inner">
+
+				<!-- One -->
+					<section id="one" class="wrapper style1">
+
+						
+						<header class="special">
+	  <div style="padding-top: 10px; padding-bottom: 50px;" class="nav">
+      <ul>
+        <li class="home"><a  href="index.html">Kezdőlap</a></li>
+        <li class="tutorials"><a  href="gimnazium.html">Gimnázium</a></li>
+        <li class="about"><a href="egyetem.html">Egyetem</a></li>
+        <li class="news"><a class="active" href="rolam.html">Rólam</a></li>
+ 
+      </ul>
+    </div>
+
+							<h2 style="font-size:30px;">Rólam</h2>
+							<p>Sárospataki Református Kollégium Gimnáziuma, Általános Iskolája és Diákotthona</p>
+
+						</header>
+						<div style="text-align: justify;" class="content" style="padding: 0px;">
+							
+
+								
+
+
+
+								<div class="w3-content w3-display-container">
+  <img class="mySlides" src="./ppt/rolam/Dia1.png" style="width:100%">
+  <img class="mySlides" src="./ppt/rolam/Dia2.png" style="width:100%">
+  <img class="mySlides" src="./ppt/rolam/Dia3.png" style="width:100%">
+  <img class="mySlides" src="./ppt/rolam/Dia4.png" style="width:100%">
+    <img class="mySlides" src="./ppt/rolam/Dia5.png" style="width:100%">
+      <img class="mySlides" src="./ppt/rolam/Dia6.png" style="width:100%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+<br>
+<center><a href="./ppt/rolam.pptx" style="font-size: 25px; text-decoration: none; " download>PPT Letöltése</a></center>
+
+
+
+
+						</div>
+					</section>
+					
+
+					
+		
+					
+
+				</div>
+			</section>
+
+			<footer id="footer">
+				<div class="container">
+					<ul class="icons">
+					
+						<li><a href="https://hu-hu.facebook.com/palma.gombos" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						
+					</ul>
+				</div>
+				
+			</footer>
+
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
